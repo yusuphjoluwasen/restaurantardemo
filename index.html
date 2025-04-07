@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RestaurantAR Demo</title>
+
+    <!-- Google Fonts: Futuristic Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, #111, #000);
+            color: #00ffc2;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px #00ffc280;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .cta {
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #00ffc21a;
+            border: 1px solid #00ffc2;
+            border-radius: 12px;
+            color: #00ffc2;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 0 10px #00ffc250;
+            transition: 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #00ffc2;
+            color: #000;
+            box-shadow: 0 0 20px #00ffc2aa;
+        }
+    </style>
+</head>
+<body>
+
+<model-viewer
+        src="https://firebasestorage.googleapis.com/v0/b/nursingmother-64709.appspot.com/o/innovate_usdz%2Fpancakes.glb?alt=media&token=aff55fa7-ddd1-420d-b03f-545f33845598b"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        auto-rotate
+        poster="optional-preview.jpg"
+        alt="3D Food Demo">
+</model-viewer>
+
+<h2>Bring Menus to Life, Taste the Future.</h2>
+
+<a href="https://restaurantar.co.uk" class="cta">Continue</a>
+
+</body>
+</html>
