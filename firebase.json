@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "restaurantardemofood",
-    "public": "y",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
